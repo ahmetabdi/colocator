@@ -12,9 +12,11 @@ RCT_EXPORT_METHOD(init:(NSString *)endpoint apiKey:(NSString *)apiKey)
     locManager = [[CLLocationManager alloc] init];
     
     //[locManager requestWhenInUseAuthorization];
-    
-    locManager.delegate = self;
     [locManager requestAlwaysAuthorization];
+    
+    
+    [locmanager status]
+    RCTLogInfo(@"Status: %@");
 
     ccLocation = [[CCLocation alloc] init];
     
@@ -22,13 +24,6 @@ RCT_EXPORT_METHOD(init:(NSString *)endpoint apiKey:(NSString *)apiKey)
     RCTLogInfo(@"Device: %@", deviceId);
     
     [ccLocation startWithApiKey:apiKey urlString:endpoint];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    
-    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        RCTLogInfo(@"kCLAuthorizationStatusAuthorizedAlways || kCLAuthorizationStatusAuthorizedWhenInUse");
-    }
 }
 
 RCT_EXPORT_METHOD(setAlias:(NSString *)key value:(NSString *)value)

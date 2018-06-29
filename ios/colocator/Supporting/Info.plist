@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Allow colocator to access your location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -66,18 +64,28 @@
 	<string>Allow colocator to use your camera</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Allow colocator to access your contacts</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This is required but is not shown to the user.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow colocator to access your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow colocator to use your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Allow colocator to use your location</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allow colocator to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow colocator to access your device&apos;s accelerometer</string>
+	<string>Allow colocator to access your device's accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Give colocator permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Give colocator permission to access your photos</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>Allow colocator to access your reminders</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
