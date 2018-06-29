@@ -2,7 +2,7 @@
 #import "CCLocation.h"
 @import CoreLocation;
 
-@interface RNColocator : NSObject <RCTBridgeModule>
+@interface RNColocator : NSObject <RCTBridgeModule, CLLocationManagerDelegate>
 @end
 
 CLLocationManager* locManager;
