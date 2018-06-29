@@ -13,8 +13,11 @@ RCT_EXPORT_METHOD(init:(NSString *)endpoint apiKey:(NSString *)apiKey)
     
     [locManager requestWhenInUseAuthorization];
     [locManager requestAlwaysAuthorization];
-    
+
     ccLocation = [[CCLocation alloc] init];
+    
+    NSString *deviceId = [ccLocation getDeviceId];
+    RCTLogInfo(@"Device: %@", deviceId);
     
     [ccLocation startWithApiKey:apiKey urlString:endpoint];
 }
