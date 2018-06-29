@@ -5,7 +5,10 @@
     "slug": "colocator",
     "privacy": "public",
     "sdkVersion": "28.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +24,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kyan.colocator",
+      "publishBundlePath": "ios/colocator/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/colocator/Supporting/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.6.8-sdk28.0.0-d3178d29-6e12-458b-bfeb-8b7538943b48.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.6.2-sdk28.0.0-141d0954-b898-4919-aa89-3ab45453213f.tar.gz"
+    },
+    "scheme": "expb7e86a53e37d446fb728fca6954c0a76",
+    "android": {
+      "package": "com.kyan.colocator",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     }
   }
 }
