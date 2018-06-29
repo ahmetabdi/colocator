@@ -18,6 +18,16 @@
 		B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */; };
 		B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047E1F3A684600E91581 /* shell-app-manifest.json */; };
 		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
+		E3F3C61520E6133D0058620C /* libCCLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61420E6133D0058620C /* libCCLocation.a */; };
+		E3F3C61C20E613750058620C /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61720E613740058620C /* SwiftProtobuf.framework */; };
+		E3F3C61D20E613750058620C /* TrueTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61820E613740058620C /* TrueTime.framework */; };
+		E3F3C61E20E613750058620C /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61920E613740058620C /* SocketRocket.framework */; };
+		E3F3C61F20E613750058620C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61A20E613740058620C /* Result.framework */; };
+		E3F3C62020E613750058620C /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61B20E613750058620C /* ReSwift.framework */; };
+		E3F3C62220E6138D0058620C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C62120E6138D0058620C /* libicucore.tbd */; };
+		E3F3C62420E613A20058620C /* CCLocation.h in Resources */ = {isa = PBXBuildFile; fileRef = E3F3C62320E613A20058620C /* CCLocation.h */; };
+		E3F3C62620E613A90058620C /* certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = E3F3C62520E613A80058620C /* certificate.der */; };
+		E3F3C62920E613C10058620C /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3C62820E613C10058620C /* Empty.swift */; };
 		EBB8117C1BFA0514F79CAF74 /* libPods-colocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-colocator.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +49,18 @@
 		B5DB047E1F3A684600E91581 /* shell-app-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shell-app-manifest.json"; sourceTree = "<group>"; };
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
 		C4A88D15726AD99E8A257BC7 /* libPods-colocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-colocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F3C61420E6133D0058620C /* libCCLocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCCLocation.a; path = ../CCLocationStaticLibFiles/libCCLocation.a; sourceTree = "<group>"; };
+		E3F3C61620E613440058620C /* CCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocation.h; path = ../CCLocationStaticLibFiles/CCLocation.h; sourceTree = "<group>"; };
+		E3F3C61720E613740058620C /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = ../CCLocationStaticLibFiles/libs/SwiftProtobuf.framework; sourceTree = "<group>"; };
+		E3F3C61820E613740058620C /* TrueTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TrueTime.framework; path = ../CCLocationStaticLibFiles/libs/TrueTime.framework; sourceTree = "<group>"; };
+		E3F3C61920E613740058620C /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = ../CCLocationStaticLibFiles/libs/SocketRocket.framework; sourceTree = "<group>"; };
+		E3F3C61A20E613740058620C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../CCLocationStaticLibFiles/libs/Result.framework; sourceTree = "<group>"; };
+		E3F3C61B20E613750058620C /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = ../CCLocationStaticLibFiles/libs/ReSwift.framework; sourceTree = "<group>"; };
+		E3F3C62120E6138D0058620C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		E3F3C62320E613A20058620C /* CCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCLocation.h; path = ../CCLocationStaticLibFiles/CCLocation.h; sourceTree = "<group>"; };
+		E3F3C62520E613A80058620C /* certificate.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = certificate.der; path = ../CCLocationStaticLibFiles/certificate.der; sourceTree = "<group>"; };
+		E3F3C62720E613C00058620C /* colocator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "colocator-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3F3C62820E613C10058620C /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +68,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F3C62220E6138D0058620C /* libicucore.tbd in Frameworks */,
+				E3F3C61520E6133D0058620C /* libCCLocation.a in Frameworks */,
 				EBB8117C1BFA0514F79CAF74 /* libPods-colocator.a in Frameworks */,
+				E3F3C61C20E613750058620C /* SwiftProtobuf.framework in Frameworks */,
+				E3F3C61D20E613750058620C /* TrueTime.framework in Frameworks */,
+				E3F3C61E20E613750058620C /* SocketRocket.framework in Frameworks */,
+				E3F3C61F20E613750058620C /* Result.framework in Frameworks */,
+				E3F3C62020E613750058620C /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +85,12 @@
 		1A42804E64B7E9E0AB8B6799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3F3C62120E6138D0058620C /* libicucore.tbd */,
+				E3F3C61A20E613740058620C /* Result.framework */,
+				E3F3C61B20E613750058620C /* ReSwift.framework */,
+				E3F3C61920E613740058620C /* SocketRocket.framework */,
+				E3F3C61720E613740058620C /* SwiftProtobuf.framework */,
+				E3F3C61820E613740058620C /* TrueTime.framework */,
 				C4A88D15726AD99E8A257BC7 /* libPods-colocator.a */,
 			);
 			name = Frameworks;
@@ -73,6 +108,10 @@
 		B56386381DB9693800A0598C = {
 			isa = PBXGroup;
 			children = (
+				E3F3C62520E613A80058620C /* certificate.der */,
+				E3F3C62320E613A20058620C /* CCLocation.h */,
+				E3F3C61420E6133D0058620C /* libCCLocation.a */,
+				E3F3C61620E613440058620C /* CCLocation.h */,
 				B56386431DB9693800A0598C /* colocator */,
 				B56386421DB9693800A0598C /* Products */,
 				5B29BC350A332C58878A9F13 /* Pods */,
@@ -95,6 +134,8 @@
 				B56386481DB9693800A0598C /* AppDelegate.m */,
 				B56386501DB9693800A0598C /* Assets.xcassets */,
 				B563865B1DB96A5E00A0598C /* Supporting */,
+				E3F3C62820E613C10058620C /* Empty.swift */,
+				E3F3C62720E613C00058620C /* colocator-Bridging-Header.h */,
 			);
 			path = colocator;
 			sourceTree = "<group>";
@@ -153,6 +194,7 @@
 					B56386401DB9693800A0598C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = C8D8QTF339;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -180,6 +222,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F3C62620E613A90058620C /* certificate.der in Resources */,
+				E3F3C62420E613A20058620C /* CCLocation.h in Resources */,
 				B5693E911FABD46800307FA4 /* launch_background_image.png in Resources */,
 				B501732B1DC01252003445D9 /* EXShell.plist in Resources */,
 				B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */,
@@ -307,6 +351,7 @@
 			files = (
 				B56386611DB96A5E00A0598C /* main.m in Sources */,
 				B56386491DB9693800A0598C /* AppDelegate.m in Sources */,
+				E3F3C62920E613C10058620C /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +465,154 @@
 			baseConfigurationReference = 2C1548D9E4CB1AEFA5CCAE6D /* Pods-colocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C8D8QTF339;
 				INFOPLIST_FILE = "$(SRCROOT)/colocator/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Amplitude-iOS\"",
+					"-l\"Analytics\"",
+					"-l\"AppAuth\"",
+					"-l\"Bolts\"",
+					"-l\"Branch\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DoubleConversion\"",
+					"-l\"ExpoKit\"",
+					"-l\"FBSDKCoreKit\"",
+					"-l\"FBSDKLoginKit\"",
+					"-l\"FBSDKShareKit\"",
+					"-l\"Folly\"",
+					"-l\"GIPNSURL+FIFE_external\"",
+					"-l\"GPUImage\"",
+					"-l\"Google-Maps-iOS-Utils\"",
+					"-l\"JKBigInteger2\"",
+					"-l\"React\"",
+					"-l\"SignIn_external\"",
+					"-l\"c++\"",
+					"-l\"glog\"",
+					"-l\"lottie-ios\"",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"yoga\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"FBAudienceNetwork\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleAppUtilities\"",
+					"-framework",
+					"\"GoogleAuthUtilities\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"CoreMotion\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-fprofile-instr-generate",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyan.colocator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "colocator/colocator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -434,11 +622,153 @@
 			baseConfigurationReference = A47FE4D7F70906B7DC8CE39B /* Pods-colocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C8D8QTF339;
 				INFOPLIST_FILE = "$(SRCROOT)/colocator/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Amplitude-iOS\"",
+					"-l\"Analytics\"",
+					"-l\"AppAuth\"",
+					"-l\"Bolts\"",
+					"-l\"Branch\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DoubleConversion\"",
+					"-l\"ExpoKit\"",
+					"-l\"FBSDKCoreKit\"",
+					"-l\"FBSDKLoginKit\"",
+					"-l\"FBSDKShareKit\"",
+					"-l\"Folly\"",
+					"-l\"GIPNSURL+FIFE_external\"",
+					"-l\"GPUImage\"",
+					"-l\"Google-Maps-iOS-Utils\"",
+					"-l\"JKBigInteger2\"",
+					"-l\"React\"",
+					"-l\"SignIn_external\"",
+					"-l\"c++\"",
+					"-l\"glog\"",
+					"-l\"lottie-ios\"",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"yoga\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"FBAudienceNetwork\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleAppUtilities\"",
+					"-framework",
+					"\"GoogleAuthUtilities\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"CoreMotion\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-fprofile-instr-generate",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyan.colocator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "colocator/colocator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
