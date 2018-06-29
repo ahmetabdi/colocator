@@ -13,10 +13,6 @@ RCT_EXPORT_METHOD(init:(NSString *)endpoint apiKey:(NSString *)apiKey)
     
     //[locManager requestWhenInUseAuthorization];
     [locManager requestAlwaysAuthorization];
-    
-    
-    [locmanager status]
-    RCTLogInfo(@"Status: %@");
 
     ccLocation = [[CCLocation alloc] init];
     
