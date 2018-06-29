@@ -1,0 +1,11 @@
+framework module TrueTime {
+  umbrella header "TrueTime.h"
+
+  export *
+  module * { export * }
+}
+
+module TrueTime.Swift {
+    header "TrueTime-Swift.h"
+    requires objc
+}
