@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NativeModules } from 'react-native';
 
 export default class App extends React.Component {
+  componentDidMount() {
+    NativeModules.RNColocator.init("zauwuart.colocator.net:443/socket", "zauwuart")
+  }
+
   render() {
     return (
       <View style={styles.container}>

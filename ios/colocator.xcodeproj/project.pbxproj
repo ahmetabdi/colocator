@@ -25,9 +25,10 @@
 		E3F3C61F20E613750058620C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61A20E613740058620C /* Result.framework */; };
 		E3F3C62020E613750058620C /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C61B20E613750058620C /* ReSwift.framework */; };
 		E3F3C62220E6138D0058620C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F3C62120E6138D0058620C /* libicucore.tbd */; };
-		E3F3C62420E613A20058620C /* CCLocation.h in Resources */ = {isa = PBXBuildFile; fileRef = E3F3C62320E613A20058620C /* CCLocation.h */; };
 		E3F3C62620E613A90058620C /* certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = E3F3C62520E613A80058620C /* certificate.der */; };
 		E3F3C62920E613C10058620C /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3C62820E613C10058620C /* Empty.swift */; };
+		E3F3C62B20E6156F0058620C /* CCLocation.h in Resources */ = {isa = PBXBuildFile; fileRef = E3F3C62A20E6155F0058620C /* CCLocation.h */; };
+		E3F3C62E20E616420058620C /* RNColocator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F3C62D20E616420058620C /* RNColocator.m */; };
 		EBB8117C1BFA0514F79CAF74 /* libPods-colocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-colocator.a */; };
 /* End PBXBuildFile section */
 
@@ -50,17 +51,18 @@
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
 		C4A88D15726AD99E8A257BC7 /* libPods-colocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-colocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F3C61420E6133D0058620C /* libCCLocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCCLocation.a; path = ../CCLocationStaticLibFiles/libCCLocation.a; sourceTree = "<group>"; };
-		E3F3C61620E613440058620C /* CCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocation.h; path = ../CCLocationStaticLibFiles/CCLocation.h; sourceTree = "<group>"; };
 		E3F3C61720E613740058620C /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = ../CCLocationStaticLibFiles/libs/SwiftProtobuf.framework; sourceTree = "<group>"; };
 		E3F3C61820E613740058620C /* TrueTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TrueTime.framework; path = ../CCLocationStaticLibFiles/libs/TrueTime.framework; sourceTree = "<group>"; };
 		E3F3C61920E613740058620C /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = ../CCLocationStaticLibFiles/libs/SocketRocket.framework; sourceTree = "<group>"; };
 		E3F3C61A20E613740058620C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../CCLocationStaticLibFiles/libs/Result.framework; sourceTree = "<group>"; };
 		E3F3C61B20E613750058620C /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = ../CCLocationStaticLibFiles/libs/ReSwift.framework; sourceTree = "<group>"; };
 		E3F3C62120E6138D0058620C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		E3F3C62320E613A20058620C /* CCLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCLocation.h; path = ../CCLocationStaticLibFiles/CCLocation.h; sourceTree = "<group>"; };
 		E3F3C62520E613A80058620C /* certificate.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = certificate.der; path = ../CCLocationStaticLibFiles/certificate.der; sourceTree = "<group>"; };
 		E3F3C62720E613C00058620C /* colocator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "colocator-Bridging-Header.h"; sourceTree = "<group>"; };
 		E3F3C62820E613C10058620C /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		E3F3C62A20E6155F0058620C /* CCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocation.h; path = ../CCLocationStaticLibFiles/CCLocation.h; sourceTree = "<group>"; };
+		E3F3C62C20E616330058620C /* RNColocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNColocator.h; sourceTree = "<group>"; };
+		E3F3C62D20E616420058620C /* RNColocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNColocator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				E3F3C62520E613A80058620C /* certificate.der */,
-				E3F3C62320E613A20058620C /* CCLocation.h */,
 				E3F3C61420E6133D0058620C /* libCCLocation.a */,
-				E3F3C61620E613440058620C /* CCLocation.h */,
+				E3F3C62A20E6155F0058620C /* CCLocation.h */,
 				B56386431DB9693800A0598C /* colocator */,
 				B56386421DB9693800A0598C /* Products */,
 				5B29BC350A332C58878A9F13 /* Pods */,
@@ -136,6 +137,8 @@
 				B563865B1DB96A5E00A0598C /* Supporting */,
 				E3F3C62820E613C10058620C /* Empty.swift */,
 				E3F3C62720E613C00058620C /* colocator-Bridging-Header.h */,
+				E3F3C62C20E616330058620C /* RNColocator.h */,
+				E3F3C62D20E616420058620C /* RNColocator.m */,
 			);
 			path = colocator;
 			sourceTree = "<group>";
@@ -222,8 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F3C62B20E6156F0058620C /* CCLocation.h in Resources */,
 				E3F3C62620E613A90058620C /* certificate.der in Resources */,
-				E3F3C62420E613A20058620C /* CCLocation.h in Resources */,
 				B5693E911FABD46800307FA4 /* launch_background_image.png in Resources */,
 				B501732B1DC01252003445D9 /* EXShell.plist in Resources */,
 				B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */,
@@ -351,6 +354,7 @@
 			files = (
 				B56386611DB96A5E00A0598C /* main.m in Sources */,
 				B56386491DB9693800A0598C /* AppDelegate.m in Sources */,
+				E3F3C62E20E616420058620C /* RNColocator.m in Sources */,
 				E3F3C62920E613C10058620C /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,8 +471,83 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C8D8QTF339;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/Analytics\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Branch\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/ExpoKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Maps-iOS-Utils\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/JKBigInteger2\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/boost-for-react-native\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/colocator/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Amplitude-iOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Analytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Branch\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ExpoKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GPUImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Maps-iOS-Utils\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JKBigInteger2\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/yoga\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Libraries\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -624,8 +703,83 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C8D8QTF339;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/Analytics\"",
+					"\"${PODS_ROOT}/Headers/Public/AppAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Branch\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/ExpoKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBAudienceNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKShareKit\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Maps-iOS-Utils\"",
+					"\"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/JKBigInteger2\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/boost-for-react-native\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/colocator/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Amplitude-iOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Analytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Branch\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ExpoKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKShareKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GPUImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Maps-iOS-Utils\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JKBigInteger2\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/yoga\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Libraries\"",
+					"$(PROJECT_DIR)/../CCLocationStaticLibFiles",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
